@@ -1,0 +1,14 @@
+#include <limits.h>
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+int main(void) {
+    printf("192 * 192 * 192: %u\n", 192 * 192 * 192);
+    printf("pow(192, 3): %llu\n", (unsigned long long)pow(192, 3));
+    printf("7077888 %% 888: %d\n", 7077888 % 888);
+    
+    return EXIT_SUCCESS;
+}
