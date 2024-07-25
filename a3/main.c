@@ -10,8 +10,8 @@ char const*const query = "888";
 
 unsigned suffix888(unsigned min) {
     char digits[MAX_DIGITS] = {0};
-    for (unsigned long long i = min; i < UINT_MAX; i++) {
-        sprintf(digits, "%llu", i * i * i);
+    for (unsigned long i = min; i < UINT_MAX; i++) {
+        sprintf(digits, "%lu", i * i * i);
         int val = strncmp(digits + strlen(digits)-3, query, 3);
         if (val == 0) {
             return (unsigned)i;
